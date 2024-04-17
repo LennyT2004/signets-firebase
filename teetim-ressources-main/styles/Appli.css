@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Conteneur */
+.Appli {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* Formatage du sigle de devise en français */
+}
+.Appli .montant-fr::after {
+  content: " $";
+}/*# sourceMappingURL=Appli.css.map */

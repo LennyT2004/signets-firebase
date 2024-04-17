@@ -1,0 +1,55 @@
+.Produit {
+	position: relative;
+	width: 33%;
+	min-width: 200px;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	// Badge des ventes
+	.ventes {
+		position: absolute;
+		top: -0.5rem;
+		left: -0.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2rem;
+		height: 2rem;
+		background-color: var(--clr-fond-badge);
+		color: var(--clr-texte-secondaire);
+		border-radius: 50%;
+		font-size: 0.6rem;
+		font-weight: bold;
+	}
+
+	// Image du produit
+	.image img {
+		width: 100%;
+	}
+
+	// Info du produit
+	.prd-info {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		justify-content: space-between;
+
+		.nom {
+			text-align: center;
+		}
+
+		.prix {
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+
+	// Bouton Ajout au panier
+	.btn-ajouter {
+		margin: 1rem;
+		padding: 0.5rem;
+		cursor: pointer;
+	}
+}

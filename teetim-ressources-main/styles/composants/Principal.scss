@@ -1,0 +1,113 @@
+.Principal {
+  flex-grow: 1;
+  width: 95vw;
+  margin: 2rem auto;
+  
+  .amorce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+
+    .controle form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 0.75rem;
+      font-size: 0.9rem;
+
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      select {
+        margin-left: 0.5rem;
+        padding: 0.5rem 3rem 0.5rem 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  .liste-produits {
+    margin: 1rem auto;
+    width: 90vw;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .produit {
+      position: relative;
+      width: 33%;
+      min-width: 200px;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      // Badge des ventes
+      .ventes {
+        position: absolute;
+        top: -0.5rem;
+        left: -0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--clr-fond-badge);
+        color: var(--clr-texte-secondaire);
+        border-radius: 50%;
+        font-size: 0.6rem;
+        font-weight: bold;
+      }
+
+      // Image du produit
+      .image img {
+        width: 100%;
+      }
+
+      // Info du produit
+      .prd-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+
+        .nom {
+          text-align: center;
+        }
+
+        .prix {
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+
+      // Bouton Ajout au panier
+      .btn-ajouter {
+        margin: 1rem;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  // Plus grands écrans
+  @media (min-width: 1000px) {
+    /* Page Produits */
+    .amorce .controle form {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 0.75rem;
+    }
+
+    .amorce .controle form > div {
+      margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.Principal {
+  flex-grow: 1;
+  width: 95vw;
+  margin: 2rem auto;
+  
+  .amorce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+
+    .controle form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 0.75rem;
+      font-size: 0.9rem;
+
+      & > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      select {
+        margin-left: 0.5rem;
+        padding: 0.5rem 3rem 0.5rem 0.5rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  // Plus grands écrans
+  @media (min-width: 1000px) {
+    /* Page Produits */
+    .amorce .controle form {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 0.75rem;
+    }
+
+    .amorce .controle form > div {
+      margin: 0 1rem;
+    }
+  }
+}

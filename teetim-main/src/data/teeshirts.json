@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ts0001",
+    "categorie": "animaux",
+    "nom": "Cute comme un poisson tropical",
+    "prix": 25.95,
+    "dac": "2023-04-25",
+    "ventes": 34
+  },
+  {
+    "id": "ts0004",
+    "categorie": "animaux",
+    "nom": "Monstre douillet",
+    "prix": 25.95,
+    "dac": "2023-08-12",
+    "ventes": 123
+  },
+  {
+    "id": "ts0006",
+    "categorie": "animaux",
+    "nom": "Camarade basque",
+    "prix": 20.5,
+    "dac": "2023-02-27",
+    "ventes": 20
+  },
+  {
+    "id": "ts0007",
+    "categorie": "animaux",
+    "nom": "Chaton moteur",
+    "prix": 27.5,
+    "dac": "2023-10-01",
+    "ventes": 12
+  },
+  {
+    "id": "ts0009",
+    "categorie": "animaux",
+    "nom": "Renardcoptère",
+    "prix": 17.95,
+    "dac": "2023-05-04",
+    "ventes": 56
+  },
+  {
+    "id": "ts0013",
+    "categorie": "animaux",
+    "nom": "L'outre d'outremer",
+    "prix": 15.95,
+    "dac": "2022-10-11",
+    "ventes": 260
+  },
+  {
+    "id": "ts0002",
+    "categorie": "inusite",
+    "nom": "Fauteuil illégal",
+    "prix": 20.5,
+    "dac": "2023-01-02",
+    "ventes": 6
+  },
+  {
+    "id": "ts0014",
+    "categorie": "inusite",
+    "nom": "Cerveau volant",
+    "prix": 24.5,
+    "dac": "2022-08-08",
+    "ventes": 154
+  },
+  {
+    "id": "ts0019",
+    "categorie": "inusite",
+    "nom": "Beau bébébot",
+    "prix": 26.5,
+    "dac": "2023-09-05",
+    "ventes": 20
+  },
+  {
+    "id": "ts0020",
+    "categorie": "inusite",
+    "nom": "Grille-pain couac-couac",
+    "prix": 20,
+    "dac": "2023-10-01",
+    "ventes": 3
+  },
+  {
+    "id": "ts0003",
+    "categorie": "sport",
+    "nom": "Un dunk dans l'univers",
+    "prix": 22.75,
+    "dac": "2023-01-02",
+    "ventes": 21
+  },
+  {
+    "id": "ts0015",
+    "categorie": "sport",
+    "nom": "Basket courbe",
+    "prix": 19.75,
+    "dac": "2022-09-04",
+    "ventes": 158
+  },
+  {
+    "id": "ts0016",
+    "categorie": "sport",
+    "nom": "pizza, vino e calcio",
+    "prix": 19.75,
+    "dac": "2023-07-18",
+    "ventes": 40
+  },
+  {
+    "id": "ts0005",
+    "categorie": "nature",
+    "nom": "Bleu comme une orange",
+    "prix": 25.95,
+    "dac": "2022-12-25",
+    "ventes": 325
+  },
+  {
+    "id": "ts0008",
+    "categorie": "nature",
+    "nom": "Et vogue le navire",
+    "prix": 15.5,
+    "dac": "2022-12-21",
+    "ventes": 293
+  },
+  {
+    "id": "ts0010",
+    "categorie": "nature",
+    "nom": "Par une nuit d'été sur Mars",
+    "prix": 22,
+    "dac": "2023-01-30",
+    "ventes": 48
+  },
+  {
+    "id": "ts0011",
+    "categorie": "nature",
+    "nom": "Le déjeuner pointilliste",
+    "prix": 21,
+    "dac": "2023-02-21",
+    "ventes": 55
+  },
+  {
+    "id": "ts0012",
+    "categorie": "nature",
+    "nom": "Portrait au tournesol",
+    "prix": 29.99,
+    "dac": "2023-03-26",
+    "ventes": 24
+  },
+  {
+    "id": "ts0017",
+    "categorie": "nature",
+    "nom": "Reflexion dans le lac",
+    "prix": 21.5,
+    "dac": "2023-07-10",
+    "ventes": 12
+  },
+  {
+    "id": "ts0018",
+    "categorie": "nature",
+    "nom": "Levé de soleil en automne",
+    "prix": 22.95,
+    "dac": "2023-08-28",
+    "ventes": 5
+  }
+]

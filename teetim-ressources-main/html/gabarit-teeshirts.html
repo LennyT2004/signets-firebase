@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;900&family=Noto+Serif:ital,wght@0,400;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teeTIM // teeshirts 100% cotton bio</title>
+  <meta name="description"
+    content="Nos teeshirts sont faits avec les meilleurs matériaux, fabriqués au Québec, conçus par ...">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+  <div class="conteneur">
+    <header>
+      <nav class="barre-haut">
+        <!-- Répéter une balise A pour chaque langue disponible -->
+        <a title="ENGLISH" href="#" class="">en</a>
+        <a title="FRANÇAIS" href="#" class="actif">fr</a>
+
+      </nav>
+      <nav class="barre-logo">
+        <label for="cc-btn-responsive" class="material-icons burger">menu</label>
+        <a class="logo" href="#"><img src="images/logo.png" alt="Accueil"></a>
+        <div class="panier-icone">
+          <div class="panier-badge ">1</div>
+          <label for="panier-cc" class="material-icons">shopping_cart</label>
+          <input type="checkbox" id="panier-cc">
+          <div class="sommaire-panier">
+            <div class="ligne1">
+              <span class="nb-articles">
+                <span class="etiquette">#Articles : </span>
+                <span class="nombre">1</span>
+              </span>
+              <label for="panier-cc" class="material-icons">close</label>
+            </div>
+            <div class="ligne2">
+              <span class="sous-titre">Sous-total du panier</span>
+              <span class="sous-total montant-fr">20.00</span>
+            </div>
+            <div class="ligne3 btn-afficher-panier">
+              <a href="#">Voir le panier d'achats</a>
+            </div>
+          </div>
+        </div>
+        <input class="recherche" type="search" name="motscles" placeholder="Mots-clés de votre recherche">
+      </nav>
+      <input type="checkbox" id="cc-btn-responsive">
+      <nav class="principale">
+        <label for="cc-btn-responsive" class="menu-controle material-icons">close</label>
+        <a href="#" class="actif">Teeshirts</a>
+        <a href="#" class="">Casquettes</a>
+        <a href="#" class="">Hoodies</a>
+        <span class="separateur"></span>
+        <a href="#" class="">Aide</a>
+        <a href="#" class="">À propos de nous</a>
+      </nav>
+    </header>
+    <main class="page-produits page-teeshirts">
+      <article class="amorce">
+        <h1>Nos teeshirts</h1>
+        <section class="controle">
+          <form action="" method="get">
+            <div class="filtre">
+              <label for="filtre">Filtrer par : </label>
+              <select name="filtre" id="filtre">
+                <option value="tous">Tous les produits</option>
+
+                <option value="1">Animaux</option>
+                <option value="2">Inusité</option>
+                <option value="4">Nature</option>
+                <option value="3">Sport</option>
+              </select>
+            </div>
+            <div class="tri">
+              <label for="tri">Trier par : </label>
+              <select name="tri" id="tri">
+                <option value="RAND()">Aléatoire</option>
+                <option value="prix ASC">Prix / ascendant</option>
+                <option value="prix DESC">Prix / descendant</option>
+                <option value="nom ASC">Nom / ascendant</option>
+                <option value="nom DESC">Nom / descendant</option>
+                <option value="dac DESC">Nouveauté</option>
+                <option value="ventes DESC">Meilleur vendeur</option>
+              </select>
+          </form>
+        </section>
+      </article>
+  
+  <article class="principal liste-produits">
+    <div class="produit" data-pid="11">
+      <span class="ventes">21</span>
+      <span class="image">
+        <img src="images/produits/teeshirts/ts0003.webp" alt="Un dunk dans l'univers">
+      </span>
+      <div class="prd-info">
+        <span class="nom">Un dunk dans l'univers</span>
+        <span class="prix">
+          <span class="montant">
+            22.75
+          </span>
+          $
+        </span>
+      </div>
+      <!-- Bouton d'ajout au panier -->
+      <button class="btn-ajouter">Ajouter au panier</button>
+    </div>
+  </article>
+  </main>
+
+
+  <footer>
+    <h2>teeTIM</h2>
+    <div class="contenu">
+      <section class="achats">
+        <h3>Vos achats</h3>
+        <nav>
+          <a href="#">Foire aux questions</a>
+          <a href="#">Livraison de votre colis</a>
+          <a href="#">Conditions de vente</a>
+          <a href="#">Politique de confidentialité</a>
+        </nav>
+      </section>
+      <section class="apropos">
+        <h3>À propos de teeTIM</h3>
+        <nav>
+          <a href="#">La compagnie</a>
+          <a href="#">L'équipe</a>
+          <a href="#">Emplois</a>
+        </nav>
+      </section>
+      <section class="coordonnees">
+        <h3>Nous joindre</h3>
+        <nav>
+          <span>Sans frais : <b>1 866 888 6666</b></span>
+          <span>Courriel : aide@teetim.ca</span>
+        </nav>
+      </section>
+    </div>
+    <p class="da">&copy; Tous droits réservés, teeTIM 2024</p>
+  </footer>
+  </div>
+  <!-- [TPv2] Point 6 et 7 : inclure le fichier de code JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
