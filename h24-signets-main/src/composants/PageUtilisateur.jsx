@@ -7,34 +7,39 @@ import FrmDossier from './FrmDossier';
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import { useEffect, useState } from 'react';
+import { creer, lireTout } from '../code/dossier-modele';
 
 export default function PageUtilisateur({util}) {
   // État pour gérer les dossiers
-  const [dossiers, setDossiers] = useState(
-    () => JSON.parse(window.localStorage.getItem('signets')) || []
-  );
-
-  // Sauvegarder cet état dans localStorage
-  useEffect(
-    () => window.localStorage.setItem('signets', JSON.stringify(dossiers))
-    ,
-    [dossiers]
-  );
+  const [dossiers, setDossiers] = useState([]);
 
   // État d'affichage du formulaire d'ajout de dossier 
   const [frmDossierOuvert, setFrmDossierOuvert] = useState(false);
 
+  // Appeler la fonction lireDossiers de façon contrôlée
+  useEffect(() => {lireDossiers(); return nettoyage}, [])
+
+  // Lire les dossiers dans Firestore
+  async function lireDossiers() {
+    const lesDossiersFS = await lireTout(util.uid);
+    // console.log("Les dossiers dans FS : ", lesDossiersFS);
+    // console.log("Contenu d'un dossier : ", lesDossiersFS[1].data());
+    // console.log("Identifiant d'un dossier : ", lesDossiersFS[1].id);
+    setDossiers(lesDossiersFS.map(
+      dossierFS => ({id: dossierFS.id, ...dossierFS.data()})
+    ))
+  }
+
+  function nettoyage() {
+    // Mettre le code de nettoyage()
+  }
   /**
    * Ajoute un dossier
    */
-  function ajouterDossier(titre, couverture, couleur, dateModif) {
-    let nouveauDossier = {
-      id: window.crypto.randomUUID(),
-      titre: titre,
-      couverture: couverture,
-      couleur: couleur,
-      dateModif: dateModif
-    };
+  async function ajouterDossier(titre, couverture, couleur, dateModif) {
+    let nouveauDossier = {titre, couverture, couleur, dateModif};
+    const idDossier = await creer(util.uid, nouveauDossier);
+    nouveauDossier.id = idDossier;
     setDossiers([...dossiers, nouveauDossier]);
   }
 
@@ -45,6 +50,7 @@ export default function PageUtilisateur({util}) {
           <ListeDossiers 
             dossiers={dossiers} 
             setDossiers={setDossiers} 
+            idUtil={util.uid}
           />
           <FrmDossier 
             ouvert={frmDossierOuvert} 
